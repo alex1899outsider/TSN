@@ -40,7 +40,7 @@ while True:
         print("\noh. What a shame.Do you truly think that's all? 'EVERYTHING' ?")
         import random
         egg = ['You felw too close to the sun.','Mr.Saverin,take it easy.',
-               'I m not a bad buy,Eduardo',"Wow,It'cherry.\nUnfortunately,it will be rotten.\n"
+               'I m not a bad buy,Eduardo',"I see,It'cherry.\nUnfortunately,it will be rotten.\n"
                 "\n'Cause time is the most cruel thing."]
         print('\n',random.choice(egg))
     
