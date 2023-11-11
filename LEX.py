@@ -6,8 +6,11 @@ print('\n(!!! <Please keep Caps Lock on ALL THE TIME.> !!!)'
       '\n\nMark SET YOU UP , and you have to make choice.'
       ,'\n',A,'\n',B,'\n',C)
 
+DONT = ['a','e','b','c','d','f','g','h','i','j','k',
+                 'l','m','n','o','p','q','r','s','t',
+                 'u','v','w','x','y','z']
 ANSWERS = ['ABC','ACB','BAC','BCA','CAB','CBA']
-
+ANSWER = ['A','B','C','AB','AC','CB','BC','CA','BA']
 while True:
     choose = input('\n''you will:')
 
@@ -49,11 +52,14 @@ while True:
                        print('\nAs you wish.BUT I will have time.\n\nTime,time.\n'
                              'That will all blow away,like sand in the desert.\n')
               break     
-                        
+         
+        
+    elif choose in DONT:
+         print('!!! <Please keep Caps Lock on ALL THE TIME.> !!!')        
                  
 
             
-    elif choose not in ['A','B','C',ANSWERS] : 
+    elif choose not in ANSWER and ANSWERS : 
          print('Follow the rules! Darling')
         
     else:
@@ -63,4 +69,4 @@ while True:
                'I m not a bad guy,Eduardo',"I see,It'cherry.\nUnfortunately,it will be rotten.\n"
                 "\n'Cause time is the most cruel thing."]
         print('\n',random.choice(egg))
-          
+    
