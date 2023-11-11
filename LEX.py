@@ -1,66 +1,66 @@
- A= "为了一切回来"
- B = "没有他"
- c= "C.找律师"
+A = '\n A.coming back for everything'
+B = 'B.without him'
+C = 'C.find a lawyer'
 
-   印刷品   (   ( !!!请一直锁定帽子。我是说!!! ) '
-      "马克陷害了你,你必须做出选择。'
-      , '\n' ,A, '\n' ,B, '\n' ,c )
+print('\n(!!! <Please keep Caps Lock on ALL THE TIME.> !!!)'
+      '\n\nMark SET YOU UP , and you have to make choice.'
+      ,'\n',A,'\n',B,'\n',C)
 
 #ANSWER = ['ABC','ACB','BAC','BCA','CAB','CBA']
- 回答= 'ABC'
-当  真实的 :
-    选择= 输入   (   '\n'   "你会的:"   )
+ANSWER = 'ABC'
+while True:
+    choose = input('\n''you will:')
 
-     如果 选择==回答:
-           印刷品   (   '\n'   'Ah , Brilliant.'   '\n'   )
+    if choose == ANSWER:
+        print('\n''Ah , Brilliant.''\n')
         
-         重要性 随意的
-        卢克列格= [   "" 你知道我是谁吗?' ,
-                     "我不坏,爱德华多"
-                      "我只是一个想帮助你的人。" ]
-         印刷品 ( '\n' ,random. 选择 ( LUklyegg ) )
+        import random
+        LUCKLYegg = ['Do you know WHO I am?', 
+                     "I m not a bad guy,Eduardo\n"
+                     "I'm just someone who wants to help you."]
+        print('\n',random.choice(LUCKLYegg))
         
-        莱克斯=随机。 选择 ( LUklyegg )
+        LEX = random.choice(LUCKLYegg)
         
       
           
-         如果 莱克斯=卢克列格 [ 0 ] :
+        if LEX == LUCKLYegg[0]:
             
-
-          如果 e == 'YES' :
-            印刷品 ( 很高兴认识你爱德华,欢迎来到莱克西公司。不... )
-           中断
+         e = input("\nDo you wanna know WHO I am?  INPUT: 'YES' or 'NO'\n ENTER :")
+         if e =='YES' :
+           print('\nI m glad to knew you Eduardo,welcome to LexCorp.\n')
+           break
  
-          伊利夫 e == 'NO' :
-               印刷品 ( ""你希望吗?时间,时间。不...
-                      "那会像沙漠中的沙子一样吹散的。不... )
-              中断
-          其他的 :
+         elif e =='NO' :
+              print('\nAs you wish.BUT I will have time.\n\nTime,time.\n'
+                     'That will all blow away,like sand in the desert.\n')
+              break
+         else:
                
-               当 e 不  在…中  [ 'YES' , 'NO' ]  :  
-                      印刷品 ( ""不,不,不,你太坏了,伙计。" )
+              while e not in ['YES','NO']  :  
+                     print("\nNo,no,no,you're too bad,dudu.please,Do as I said.\n")
 
-
+                     e = input("\nDo you wanna know WHO I am?  INPUT: 'YES' or 'NO'\n ENTER :")
                      
-                      如果 e == 'YES' :
-                       印刷品 ( 很高兴认识你爱德华,欢迎来到莱克西公司。不... )
+                     if e =='YES' :
+                      print('\nI m glad to knew you Eduardo,welcome to LexCorp.\n')
  
-                      伊利夫 e == 'NO' :
-                        印刷品 ( ""你希望吗?时间,时间。不...
-                              "那会像沙漠中的沙子一样吹散的。不... )
-              中断     
+                     elif e =='NO' :
+                       print('\nAs you wish.BUT I will have time.\n\nTime,time.\n'
+                             'That will all blow away,like sand in the desert.\n')
+              break     
                         
                  
 
             
-     伊利夫 选择 在…中  'DEFGHIJKLMNOPQRSTUVWXYZ' :
-          印刷品 ( ""遵守规则!亲爱的 )
+    elif choose in 'DEFGHIJKLMNOPQRSTUVWXYZ' : 
+         print('Follow the rules! Darling')
         
-     其他的 :
-         印刷品 ( ""不。真丢人,你真以为就这些?"一切"?" )
-         重要性 随意的
-        蛋= [ ""你觉得离太阳太近了。' , ""萨弗林先生,别激动。' ,
-                我不是个坏家伙,爱德华多 , ""我知道了,樱桃。可惜的是,它会腐烂的。"
-                 "因为时间是最残酷的。" ]
-         印刷品 ( '\n' ,random. 选择 ( 蛋 ) )
+    else:
+        print("\noh. What a shame.Do you truly think that's all? 'EVERYTHING' ?")
+        import random
+        egg = ['You felw too close to the sun.','Mr.Saverin,take it easy.',
+               'I m not a bad guy,Eduardo',"I see,It'cherry.\nUnfortunately,it will be rotten.\n"
+                "\n'Cause time is the most cruel thing."]
+        print('\n',random.choice(egg))
     
