@@ -6,12 +6,12 @@ print('\n(!!! <Please keep Caps Lock on ALL THE TIME.> !!!)'
       '\n\nMark SET YOU UP , and you have to make choice.'
       ,'\n',A,'\n',B,'\n',C)
 
-#ANSWER = ['ABC','ACB','BAC','BCA','CAB','CBA']
-ANSWER = 'ABC'
+ANSWERS = ['ABC','ACB','BAC','BCA','CAB','CBA']
+
 while True:
     choose = input('\n''you will:')
 
-    if choose == ANSWER:
+    if choose in ANSWERS:
         print('\n''Ah , Brilliant.''\n')
         
         import random
@@ -53,7 +53,7 @@ while True:
                  
 
             
-    elif choose in 'DEFGHIJKLMNOPQRSTUVWXYZ' : 
+    elif choose not in ['A','B','C',ANSWERS] : 
          print('Follow the rules! Darling')
         
     else:
@@ -63,4 +63,4 @@ while True:
                'I m not a bad guy,Eduardo',"I see,It'cherry.\nUnfortunately,it will be rotten.\n"
                 "\n'Cause time is the most cruel thing."]
         print('\n',random.choice(egg))
-    
+          
