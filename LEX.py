@@ -7,10 +7,13 @@ print('\n(!!! <Please keep Caps Lock on ALL THE TIME.> !!!)'
       ,'\n',A,'\n',B,'\n',C)
 
 DONT = ['a','e','b','c','d','f','g','h','i','j','k',
-                 'l','m','n','o','p','q','r','s','t',
-                 'u','v','w','x','y','z']
+        'l','m','n','o','p','q','r','s',
+        't','u','v','w','x','y','z',
+        'acb','abc','bca','cab','cba']
+
 ANSWERS = ['ABC','ACB','BAC','BCA','CAB','CBA']
 ANSWER = ['A','B','C','AB','AC','CB','BC','CA','BA']
+
 while True:
     choose = input('\n''you will:')
 
