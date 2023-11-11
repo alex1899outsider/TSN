@@ -1,46 +1,46 @@
-A = '\n A.coming back for everything'
-B = 'B.without him'
-C = 'C.find a lawyer'
+ 为了一切回来 "为了一切回来"
+ B = "没有他"  "没有他"
+ c= 'C找律师'   "C.找律师"
 
-print('\n(Please keep Caps Lock on ALL THE TIME.)'
-      '\n\nMark SET YOU UP , and you have to make choice.'
-      ,'\n',A,'\n',B,'\n',C)
+      印刷品      ( 请一直把帽子锁好。 )    '
+      马克西姆最低限度地, 极其必胜地做出出选择。   "马克陷害了你,你必须做出选择。'
+      , '\n' ,A, '\n' ,B, '\n' ,c )   '\n' ,A, '\n' ,B, '\n' ,c )
 
-ANSWER = 'ABC'
-while True:
-    choose = input('\n''you will:')
-    if choose == ANSWER:
-        print('\n''Ah , Brilliant.''\n')
+ 回答= 'ABC'  'ABC'
+ 所有的东西都是: 真实的 :
+    选择=                    输入                    (                   '\n'                  "你会的:"                 )                输入               (              '\n'             "你会的:"            )
+    如果选择==回答: 如果 选择==回答:
+                   印刷品           (          '\n'         'Ah , Brilliant.'        '\n'       ) 印刷品 (      '\n'     'Ah , Brilliant.'    '\n'   )
         
-        import random
-        LUCKLYegg = ['Do you know WHO I am?', "I m not a bad buy,Eduardo\n"
-                     "I'm just someone who wants to help you."]
-        print('\n',random.choice(LUCKLYegg))
+        非自动输入随机
+        卢克列格你知道我是谁吗? "," 我不是坏的,但是,爱德华多 "" 你知道我是谁吗?'," 我不坏,但是爱德华多"
+                     "我们只要求一个人。""我只是一个想帮助你的人。"]
+        print('\n',random.choice(LUCKLYegg))print('\n',random.choice(LUCKLYegg))
         
-        LEX = random.choice(LUCKLYegg)
+        莱克斯=随机.乔西(卢克列格)choice(LUCKLYegg)
         
         
-        if LEX == LUCKLYegg[0]:
-           e = input("Do you wanna know WHO I am? A : 'YES' or 'NO'\n INTER:")
-           if e == 'YES' :
-            print('\nI m glad to knew you Eduardo,Welcome to LexCorp.\n')
-            break
-           elif e == 'NO' :
-            print('\nAs you wish.BUT I will have time.\n\nTime,time.\n'
-                  'That will all blow away,like sand in the desert.\n')
-            break
-           else:
-            print('\nNo,no,no,you re too bad,dudu.please,Do as I said.\n')
+        if LEX == LUCKLYegg[0]:if LEX == LUCKLYegg[0]:
+
+
+
+            中断
+
+
+
+            中断
+           其他:
+            不,不,你太坏了,伙计。请按我说的做。)
             
             
-    elif choose in 'DEFGHIJKLMNOPQRSTUVWXYZ' : 
-         print('Follow the rules! Darling')
+    在"飞走"中选择:
+         打印(按规矩!亲爱的')
         
-    else:
-        print("\noh. What a shame.Do you truly think that's all? 'EVERYTHING' ?")
-        import random
-        egg = ['You felw too close to the sun.','Mr.Saverin,take it easy.',
-               'I m not a bad buy,Eduardo',"I see,It'cherry.\nUnfortunately,it will be rotten.\n"
-                "\n'Cause time is the most cruel thing."]
-        print('\n',random.choice(egg))
+    其他:
+        印刷品真丢人,你真以为就这些?"一切"?")
+        输入随机
+
+
+
+
     
