@@ -38,14 +38,8 @@ for choice in choices:
     time.sleep(0.5)
 
 time.sleep(1)
-DONT = ["a","e","b","c","d",
-        "f","g","h","i","j","k",
-        "l","m","n","o","p","q",
-        "r","s","t","u","v","w",
-        "x","y","z",
-        "bac","acb","abc",
-        "bca","cab","cba",
-]
+DONT = set('qwertyuiopasdfghjklzxcvbnm')
+
 
 ANSWERS = ["ABC", "ACB", "BAC", "BCA", "CAB", "CBA"]
 ANSWER = ["A", "B", "C", "AB", "AC", "CB", "BC", "CA", "BA"]
@@ -56,7 +50,7 @@ LUCKLYegg = [
 ]
 
 while True:
-    choose = input("\nyou will: ")
+    choose = input("\nyou will: ").upper()
 
     if choose in ANSWERS:
         print("\n\033[1mAh, Brilliant.\033[0m\n")
@@ -66,7 +60,7 @@ while True:
         print(f"\n{LEX}")
 
         while LEX == LUCKLYegg[0]:
-            e = input("\nDo you wanna know who I am ?  YES or NO\nEnter: ")
+            e = input("\nDo you wanna know who I am ?  YES or NO\nEnter: ").upper()
 
             if e not in ["YES", "!NO", "NO", "!YES"]:
                 print("\nNo,no,no, you're too bad,dudu. Please, Do as I said.\n")
@@ -95,7 +89,8 @@ while True:
                     )
                 else:
                     print(
-                        "\n\033[1mAs you wish. BUT I will have time.\n\nTime, time.\033[0m\n"
+                        "\n\033[1mAs you wish. BUT I will have time."
+                        "\n\nTime, time.\033[0m\n"
                         "\033[1mThat will all blow away, like sand in the desert.\033[0m\n"
                     )
                 break
@@ -122,6 +117,6 @@ while True:
             "I see, It'cherry.\nUnfortunately, it will be rotten.\n"
             "\n'Cause time is the most cruel thing.",
         ]
-        
         print("\n", random.choice(egg))
+
     
