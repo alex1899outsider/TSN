@@ -1,75 +1,127 @@
-A = '\n A.coming back for everything'
-B = 'B.without him'
-C = 'C.find a lawyer'
+import time
+import random
 
-print('\n(!!! <Please keep Caps Lock on ALL THE TIME.> !!!)'
-      '\n\nMark SET YOU UP , and you have to make choice.'
-      ,'\n',A,'\n',B,'\n',C)
+# Ask user for their name
+name = input("Your name: ")
 
-DONT = ['a','e','b','c','d','f','g','h','i','j','k',
-        'l','m','n','o','p','q','r','s',
-        't','u','v','w','x','y','z',
-        'acb','abc','bca','cab','cba']
 
-ANSWERS = ['ABC','ACB','BAC','BCA','CAB','CBA']
-ANSWER = ['A','B','C','AB','AC','CB','BC','CA','BA']
+# Say hi to user
+def main():
+    print_hi(f"{name.title().strip()}, Welcome.")
+
+
+# define a function named print_hi
+def print_hi(to):
+    print(f"Hi, {to}")
+
+
+main()
+# ^^^^close <def main():> REALLY IMPORTANT !!!!
+
+time.sleep(1)
+print("\nNow you'll play \033[1;33mEduardo Saverin\033[0m.")
+
+time.sleep(0.3)
+print(
+    "\n!!! <\033[1;4;31mPlease keep Caps Lock on ALL THE TIME.\033[0m> !!!"
+    "\n\n\033[34mMark\033[0m SET YOU UP, and you have to make choice.\n"
+)
+
+choices = [
+    "A. coming back for everything",
+    "B. without him",
+    "C. find a lawyer"
+        ]
+for choice in choices:
+    sorted(choice)
+    print(choice.title())
+    time.sleep(0.5)
+
+time.sleep(1)
+DONT = ["a","e","b","c","d",
+        "f","g","h","i","j","k",
+        "l","m","n","o","p","q",
+        "r","s","t","u","v","w",
+        "x","y","z",
+        "bac","acb","abc",
+        "bca","cab","cba",
+]
+
+ANSWERS = ["ABC", "ACB", "BAC", "BCA", "CAB", "CBA"]
+ANSWER = ["A", "B", "C", "AB", "AC", "CB", "BC", "CA", "BA"]
+LUCKLYegg = [
+    "\033[1mDo you know WHO I am?\033[0m",
+    "\033[1mI'm not a bad guy, Eduardo\033[0m\n"
+    "\033[1mI'm just someone who wants to help you.\033[0m",
+]
 
 while True:
-    choose = input('\n''you will:')
+    choose = input("\nyou will: ")
 
     if choose in ANSWERS:
-        print('\n''Ah , Brilliant.''\n')
-        
-        import random
-        LUCKLYegg = ['Do you know WHO I am?', 
-                     "I m not a bad guy,Eduardo\n"
-                     "I'm just someone who wants to help you."]
-        print('\n',random.choice(LUCKLYegg))
-        
+        print("\n\033[1mAh, Brilliant.\033[0m\n")
+        time.sleep(0.5)
+
         LEX = random.choice(LUCKLYegg)
-        
-      
-          
-        if LEX == LUCKLYegg[0]:
-            
-         e = input("\nDo you wanna know WHO I am?  INPUT: 'YES' or 'NO'\n ENTER :")
-         if e =='YES' :
-           print('\nI m glad to knew you Eduardo,welcome to LexCorp.\n')
-           break
- 
-         elif e =='NO' :
-              print('\nAs you wish.BUT I will have time.\n\nTime,time.\n'
-                     'That will all blow away,like sand in the desert.\n')
-              break
-         else:
-               
-              while e not in ['YES','NO']  :  
-                     print("\nNo,no,no,you're too bad,dudu.please,Do as I said.\n")
+        print(f"\n{LEX}")
 
-                     e = input("\nDo you wanna know WHO I am?  INPUT: 'YES' or 'NO'\n ENTER :")
-                     
-                     if e =='YES' :
-                      print('\nI m glad to knew you Eduardo,welcome to LexCorp.\n')
- 
-                     elif e =='NO' :
-                       print('\nAs you wish.BUT I will have time.\n\nTime,time.\n'
-                             'That will all blow away,like sand in the desert.\n')
-              break     
-         
-        
+        while LEX == LUCKLYegg[0]:
+            e = input("\nDo you wanna know who I am ?  YES or NO\nEnter: ")
+
+            if e not in ["YES", "!NO", "NO", "!YES"]:
+                print("\nNo,no,no, you're too bad,dudu. Please, Do as I said.\n")
+                continue
+
+            elif e in ["YES", "!NO"]:
+                if e == "!NO":
+                    print('\033[1m"YES" you mean?\033[0m\n')
+                    time.sleep(1)
+                    print(
+                        "\033[1m\nI'm glad to knew you Eduardo. Welcome to LexCorp.\n\033[0m"
+                    )
+                else:
+                    print(
+                        "\033[1m\nI'm glad to knew you Eduardo. Welcome to LexCorp.\n\033[0m"
+                    )
+                    break
+
+            elif e in ["NO", "!YES"]:
+                if e == "!YES":
+                    print('\033[1mYou mean "NO"? All right.\033[0m')
+                    time.sleep(1)
+                    print(
+                        "\n\033[1mAs you wish. BUT I will have time.\n\nTime, time.\033[0m\n"
+                        "\033[1mThat will all blow away, like sand in the desert.\033[0m\n"
+                    )
+                else:
+                    print(
+                        "\n\033[1mAs you wish. BUT I will have time.\n\nTime, time.\033[0m\n"
+                        "\033[1mThat will all blow away, like sand in the desert.\033[0m\n"
+                    )
+                break
+
+        if LEX != LUCKLYegg[0]:
+            print("\033[1mYou'll know that. Just wait.\033[0m\n")
+        break
+
     elif choose in DONT:
-         print('!!! <Please keep Caps Lock on ALL THE TIME.> !!!')        
-                 
+        print("!!! <\033[1;4;31mPlease keep Caps Lock on ALL THE TIME.\033[0m> !!!")
 
-            
-    elif choose not in ANSWER and ANSWERS : 
-         print('Follow the rules! Darling')
-        
+    elif choose not in ANSWER and ANSWERS:
+        print("Follow the rules! Darling")
+
     else:
-        print("\noh. What a shame.Do you truly think that's all? 'EVERYTHING' ?")
-        import random
-        egg = ['You felw too close to the sun.','Mr.Saverin,take it easy.',
-               'I m not a bad guy,Eduardo',"I see,It'cherry.\nUnfortunately,it will be rotten.\n"
-                "\n'Cause time is the most cruel thing."]
-        print('\n',random.choice(egg))
+        print(
+            "\noh. What a shame. Do you truly think that's all? \033[1m'EVERYTHING'\033[0m ?"
+        )
+
+        egg = [
+            "You felw too close to the sun.",
+            "Mr.Saverin, take it easy.",
+            "I m not a bad guy, Eduardo",
+            "I see, It'cherry.\nUnfortunately, it will be rotten.\n"
+            "\n'Cause time is the most cruel thing.",
+        ]
+        
+        print("\n", random.choice(egg))
     
