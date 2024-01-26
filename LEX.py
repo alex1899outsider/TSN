@@ -2,24 +2,32 @@ import time
 import random
 
 # Ask user for their name
-name = input("Your name: ")
+name = input("Your name: ").title().strip()
+
+# Split user's name into first name and last name
+# first,last = name.split()
 
 
 # Say hi to user
 def main():
-    print_hi(f"{name.title().strip()}, Welcome.")
-
-
+   display_text_slowly( f"Hi, {name}, Welcome!") 
+    
 # define a function named print_hi
-def print_hi(to):
-    print(f"Hi, {to}")
+#def print_hi(to):
+#    print(f"Hi, {to}")
+
+# define a fucntion to output words one by one 
+def display_text_slowly(text, delay = 0.1):
+    for char in text:
+        print(char, end='', flush = True)
+        time.sleep(delay)
 
 
 main()
 # ^^^^close <def main():> REALLY IMPORTANT !!!!
 
 time.sleep(1)
-print("\nNow you'll play \033[1;33mEduardo Saverin\033[0m.")
+display_text_slowly("\nNow you'll play \033[1;33mEduardo Saverin\033[0m.")
 
 time.sleep(0.3)
 print(
@@ -50,17 +58,17 @@ LUCKLYegg = [
 ]
 
 while True:
-    choose = input("\nyou will: ").upper()
+    choose = input("\nYou will: ").upper().strip()
 
     if choose in ANSWERS:
         print("\n\033[1mAh, Brilliant.\033[0m\n")
         time.sleep(0.5)
 
         LEX = random.choice(LUCKLYegg)
-        print(f"\n{LEX}")
+        display_text_slowly(f"\n{LEX}")
 
         while LEX == LUCKLYegg[0]:
-            e = input("\nDo you wanna know who I am ?  YES or NO\nEnter: ").upper()
+            e = input("\nDo you wanna know who I am ?  YES or NO\nEnter: ").upper().strip()
 
             if e not in ["YES", "!NO", "NO", "!YES"]:
                 print("\nNo,no,no, you're too bad,dudu. Please, Do as I said.\n")
@@ -70,11 +78,11 @@ while True:
                 if e == "!NO":
                     print('\033[1m"YES" you mean?\033[0m\n')
                     time.sleep(1)
-                    print(
+                    display_text_slowly(
                         "\033[1m\nI'm glad to knew you Eduardo. Welcome to LexCorp.\n\033[0m"
                     )
                 else:
-                    print(
+                    display_text_slowly(
                         "\033[1m\nI'm glad to knew you Eduardo. Welcome to LexCorp.\n\033[0m"
                     )
                     break
@@ -83,12 +91,12 @@ while True:
                 if e == "!YES":
                     print('\033[1mYou mean "NO"? All right.\033[0m')
                     time.sleep(1)
-                    print(
+                    display_text_slowly(
                         "\n\033[1mAs you wish. BUT I will have time.\n\nTime, time.\033[0m\n"
                         "\033[1mThat will all blow away, like sand in the desert.\033[0m\n"
                     )
                 else:
-                    print(
+                    display_text_slowly(
                         "\n\033[1mAs you wish. BUT I will have time."
                         "\n\nTime, time.\033[0m\n"
                         "\033[1mThat will all blow away, like sand in the desert.\033[0m\n"
@@ -96,7 +104,7 @@ while True:
                 break
 
         if LEX != LUCKLYegg[0]:
-            print("\033[1mYou'll know that. Just wait.\033[0m\n")
+            display_text_slowly("\n\033[1mYou'll know that. Just wait.\033[0m\n")
         break
 
     elif choose in DONT:
@@ -111,12 +119,11 @@ while True:
         )
 
         egg = [
-            "You felw too close to the sun.",
-            "Mr.Saverin, take it easy.",
-            "I m not a bad guy, Eduardo",
-            "I see, It'cherry.\nUnfortunately, it will be rotten.\n"
-            "\n'Cause time is the most cruel thing.",
+            "\033[1mYou felw too close to the sun.\033[0m",
+            "\033[1mMr.Saverin, take it easy.\033[0m",
+            "\033[1mI m not a bad guy, Eduardo\033[0m",
+            "\033[1mI see, It'cherry.\nUnfortunately, it will be rotten.\n"
+            "\n'Cause time is the most cruel thing.\033[0m",
         ]
-        print("\n", random.choice(egg))
-
-    
+        final_egg = ("\n", random.choice(egg))
+        display_text_slowly(final_egg)
