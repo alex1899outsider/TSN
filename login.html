@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Thefacebook/Login</title>
+    <style type="text/css">
+        body {
+            background-image: url('https://ts1.cn.mm.bing.net/th/id/R-C.22ac335e665b59af1b29fe42a9ceae69?rik=SZFulr2gKH06fw&pid=ImgRaw&r=0'); /* 替换 'path/to/your/image.jpg' 为你的图像文件路径 */
+            background-size: cover; /* 保持图像覆盖整个背景 */
+            background-position: center; /* 图像在背景中居中显示 */
+            background-repeat: no-repeat; /* 禁止图像重复 */
+            margin: 0;
+            display: flex;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* 使背景充满整个视口高度 */
+        }
+        p#p1{
+            font-size: 40px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            color: white;
+            position: absolute;
+            top: 20px;
+
+        }
+        p#p2 {
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            color:white;
+        }
+        p#p3 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color: rgb(128, 128, 128);
+            font-size: 7px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        p#p4 {
+            text-decoration: none;
+            font-size: 12px;
+            position: absolute;
+            bottom: 35%;
+            color: white;
+        }
+        .interactive {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p id="p1">Welcome to thefacebook! <br>Join Us!</p>
+    <p id="p2" style="font-size: 10px;">
+        © a mark zuckerberg production
+        <br>
+        2004 - 2005
+    </p>
+    <p id="p3">
+        *The picture comes from the Internet.<br>
+        Please contact&emsp;jinmoon52413@gmail.com&emsp;if you have any problem.
+    </p>
+    <p id="p4">
+        Don't have an account yet?
+        <a href="http://127.0.0.1:3000/thefacebook/sign.html">Create one.</a>
+    </p>
+    <div class="interactive">
+        <form action="/thefacebook/global.html" method="post">
+            <label for="username">User Name:</label>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+</body>
+</html>

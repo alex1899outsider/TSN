@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Thefacebook</title>
+<img src="https://www.umass.edu/gss/sites/default/files/images/graphic-links/facebook.gif" width="38" height="38">
+
+<style type="text/css">
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:white;
+    background-image: url("");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background:linear-gradient(to right,white,rgb(162, 184, 255),rgb(2, 2, 178))
+}
+h1#h1{
+    /*background-color: rgb(2, 2, 178);*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(145, 188, 234);
+    position: absolute;
+    top: 0;
+    left: 55%;
+}
+h2#h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a#p1{
+    display: inline;
+    text-decoration: none;
+    /*background-color: rgb(2, 2, 178);*/
+    color: white;
+    font-size: 10px;
+}
+p {
+    color:rgb(0, 132, 255);
+    font-size: 10px;
+}
+p#p2 {
+	position: absolute;
+    bottom: 0;
+    left: 45%;
+    align-self: flex-end;
+    text-align: center;
+    color:rgb(0, 102, 255);	
+}
+p#p3 {
+    position: absolute;
+    left: 1%;
+    top: 5%;
+    color: #a6beff;
+}
+.myp {
+    text-decoration: line-through;
+    color:rgb(134, 130, 53);
+    font-size: 15px;
+}
+a#founders {
+    text-decoration: none;
+    color:rgb(0, 0, 255);
+    font-size: 15px;
+}
+#t {
+    position: absolute;
+    left: 50px;
+    padding: 10;
+    text-align: left;
+}
+#bottomContent {
+    display: flex;
+    align-self: flex-end;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+table#fb {
+    position: absolute;
+    right: 0;
+    top: 155px;
+    text-align: center
+}
+p#fb {
+    color: white;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.content {
+        max-height: 400px; /* 设置初始高度 */
+        overflow: hidden;
+        transition: max-height 0.5s ease; /* 添加过渡效果 */
+}
+
+.content.expanded {
+        max-height: none; /* 展开时取消最大高度限制 */
+}
+
+
+</style>
+<script>
+    function toggleContent() {
+        var content = document.querySelector('.content');
+        content.classList.toggle('expanded');
+    }
+</script>
+</head> 
+
+<body>
+<h1 id="h1" style="font-size: 50px">[thefacebook]&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+<a id="p1" href="http://127.0.0.1:3000/thefacebook/home.html">home&emsp;</a>
+<a id="p1" href="https://m.facebook.com/search/">search&emsp;</a>
+<a id="p1" href="http://127.0.0.1:3000/thefacebook/post.html">post&emsp;</a>
+<a id="p1" href="http://127.0.0.1:3000/thefacebook/global.html">global&emsp;</a>
+<a id="p1" href="https://m.facebook.com/">social net&emsp;&nbsp;invite&emsp;&nbsp;tag&emsp;&nbsp;</a>
+<a id="p1" href="http://127.0.0.1:3000/thefacebook/login.html">login&emsp;</a>
+<a id="p1" href="http://127.0.0.1:3000/thefacebook/login.html">logout</a>
+<a id="p1" href="http://127.0.0.1:3000/thefacebook/sign.html">sing in&emsp;</a>
+</h1>
+<br><br>
+<h2 id="h2" style="background-color: rgb(2, 2, 178);color: white;">&emsp;MASTHEAD</h2>
+<table border="1">
+    <tr>
+        <td>
+            <a id="founders" href="https://encyclopedia.thefreedictionary.com/mark+zuckerberg" target="_blank">Mark Zuckerberg&emsp;founder & CEO</a><br>
+            <a id="founders" href="https://encyclopedia.thefreedictionary.com/dustin+moskovitz" target="_blank">Dustin Moskovitz&emsp;co-founder & CTO</a><br>
+            <a class="myp" href="https://encyclopedia.thefreedictionary.com/eduardo+saverin" target="_blank">Eduardo Saverin&emsp;co-founder & CFO</a><br>
+            <a id="founders" href="https://encyclopedia.thefreedictionary.com/chris+hughes" target="_blank">Chris Hughes&emsp;co-founder & PR</a>
+        <td>
+    </tr>
+</table>
+
+<p id="p3">
+    01110100 01101000 01100101 00100000 01110011 01101111 
+    01100011 01101001 01100001 01101100 00100000 <br>
+    01101110 01100101 01110100 01110111 01101111 01110010 01101011
+</p>
+<h3>Welcome!</h3>
+<a href="https://m.facebook.com/">Here is Thefacebook page.</a>
+<br><br>
+<a href="https://www.nasa.gov/" style="text-decoration: none;" target="_blank">
+    <img src="https://spaceandbeyondbox.com/wp-content/uploads/2021/02/1000px-NASA_Wormball_logo.svg.png" width="38" height="38"/>
+</a>
+<a href="https://www.nasa.gov/" style="text-decoration: none;" target="_blank">NASA</a>
+<table id="t" border="1">
+    <tr>
+        <td>
+            <p style="font-size:16px;color:black;">
+                This picture is from our Website!<br><br>
+                It's oh-so-easy to be mesmerized by this spiral galaxy.<br> 
+                Follow its clearly defined arms, which are brimming with stars, to its center, where there <br>
+                may be old star clusters and-sometimes-active supermassive black holes. NASA's <br>
+                James Webb Space Telescope delivered highly detailed scenes of this and other nearby<br> 
+                spiral galaxies in a combination of near- and mid-infrared light.<br>
+                Image Credit: NASA, ESA, CSA, STScI, Janice Lee (STScI), Thomas Williams (Oxford),and<br>
+                the PHANGS team.<br>
+                Click on our profile picture or account for more information.
+            </p>
+            <p style="color: blue;font-size: 15px;">#NASA #Universe #Speace #Science #Stars</p> 
+            
+            <a href="https://www.nasa.gov/image-detail/53495965723-5c5c821f78-o/" target="_blank">
+                <img src="https://www.nasa.gov/wp-content/uploads/2024/02/53495965723-5c5c821f78-o.png" width="200" height="111.8" alt="universe"/>
+            </a>
+        </td>
+    </tr> 
+</table>
+
+<table id="fb" border="1" style="width: 500px;">
+    <tr>
+        <td>
+            <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                <a href="https://encyclopedia.thefreedictionary.com/Facebook" style="color: black; text-decoration: none;">
+                    "the"facebook
+                </a>
+            </h1>
+            <div class="content">
+                <p id="fb">
+                    Zuckerberg built a website called "Facemash" in 2003 while attending Harvard University. <br>
+                    The site was comparable to Hot or Not and used "photos compiled from the online face books of nine Houses, <br>
+                    placing two next to each other at a time and asking users to choose the "hotter" person".<br>
+                    Facemash attracted 450 visitors and 22,000 photo-views in its first four hours. The site was <br>
+                    sent to several campus group listservs, but was shut down a few days later by Harvard administration. <br>
+                    Zuckerberg faced expulsion and was charged with breaching security, violating copyrights and violating individual <br>
+                    privacy. Ultimately, the charges were dropped. Zuckerberg expanded on this project that semester by creating <br>
+                    a social study tool. He uploaded art images, each accompanied by a comments section, to a website he shared <br>
+                    with his classmates.<br>
+                    A "face book" is a student directory featuring photos and personal information. In 2003, Harvard had only <br>
+                    a paper version along with private online directories. Zuckerberg told The Harvard Crimson, "Everyone's been <br>
+                    talking a lot about a universal face book within Harvard. ... I think it's kind of silly that it would take the <br>
+                    University a couple of years to get around to it. I can do it better than they can, and I can do it in a week."<br>
+                    In January 2004, Zuckerberg coded a new website, known as "TheFacebook", inspired by a Crimson editorial about <br>
+                    Facemash, stating, "It is clear that the technology needed to create a centralized Website is readily available <br>
+                    ... the benefits are many." Zuckerberg met with Harvard student Eduardo Saverin, and each of them agreed to <br>
+                    invest $1,000 ($1,549 in 2022 dollars) in the site. On February 4, 2004, Zuckerberg launched "TheFacebook", <br>
+                    originally located at thefacebook.com. Six days after the site launched, Harvard seniors Cameron Winklevoss, <br>
+                    Tyler Winklevoss, and Divya Narendra accused Zuckerberg of intentionally misleading them into believing that <br>
+                    he would help them build a social network called HarvardConnection.com. They claimed that he was instead using <br>
+                    their ideas to build a competing product. The three complained to the Crimson and the newspaper began an investigation.<br>
+                    They later sued Zuckerberg, settling in 2008 for 1.2 million shares (worth $300 million at Facebook's IPO, <br>
+                    or $382 million in 2022 dollars).
+                    Membership was initially restricted to students of Harvard College. Within a month, more than half the undergraduates <br>
+                    had registered. Dustin Moskovitz, Andrew McCollum, and Chris Hughes joined Zuckerberg to help manage the growth of <br>
+                    the website. In March 2004, Facebook expanded to Columbia, Stanford and Yale. It then became available to all Ivy League <br>
+                    colleges, Boston University, NYU, MIT, and successively most universities in the United States and Canada. 
+                    In mid-2004, Napster co-founder and entrepreneur Sean Parker—an informal advisor to Zuckerberg—became company president. <br>
+                    In June 2004, the company moved to Palo Alto, California. Sean Parker called Reid Hoffman to fund Facebook. However, <br>
+                    Reid Hoffman was too busy launching LinkedIn so he set Facebook up with PayPal co-founder Peter Thiel, who gave Facebook <br>
+                    its first investment later that month. In 2005, the company dropped "the" from its name after purchasing the domain name <br>
+                    Facebook.com for US$200,000 ($299,676 in 2022 dollars). The domain had belonged to AboutFace Corporation.<br>
+                    In May 2005, Accel Partners invested $12.7 million ($19 million in 2022 dollars) in Facebook, and Jim Breyer added <br>
+                    $1 million ($1.5 million in 2022 dollars) of his own money. A high-school version of the site launched in September 2005.<br>
+                    Eligibility expanded to include employees of several companies, including Apple Inc. and Microsoft.
+                </p>
+            </div>
+            <button onclick="toggleContent()">show more / show less</button>
+        </td>
+    </tr>
+</table>
+<div id="bottomContent">
+    <p id="p2" style="font-size: 10px;">
+        © a mark zuckerberg production
+        <br>
+        2004 - 2005
+    </p>
+</div>
+</body>
+</html>
